@@ -84,20 +84,20 @@ def to_24_hour_clock(hours):
 
 
 ### Write your get_hours function definition here:
-
-
+def get_hours(time):get_hours=time//3600
+return get_hours
 
 
 ### Write your get_minutes function definition here:
-
-
-
-
+def get_minutes(time):while time >= 3600 :
+time = time - 3600
+if time < 3600 :
+return time//60
 ### Write your get_seconds function definition here:
-
-
-
-
+def get_seconds(time):while time >= 60 :
+time = time - 60
+if time < 60 :
+return time
 def time_to_utc(utc_offset, time):
     """ (number, float) -> float
 
